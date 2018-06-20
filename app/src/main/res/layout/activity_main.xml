@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:background="#69f0ae"
+        android:textColor="#00363a"
+        android:hint="Operand 1"
+        android:textColorHint="#000000"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:id="@+id/inputText1"
+        android:layout_width="133sp"
+        android:layout_height="67sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/inputText2"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="34sp"
+        tools:layout_editor_absoluteY="61sp" />
+
+    <EditText
+        android:hint="Operand 2"
+        android:textColorHint="#000000"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:background="#69f0ae"
+        android:id="@+id/inputText2"
+        android:layout_width="133sp"
+        android:layout_height="67sp"
+        android:textColor="#00363a"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/button4"
+        android:layout_marginTop="141dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="34sp"
+        tools:layout_editor_absoluteY="165sp" />
+
+    <TextView
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:background="#69f0ae"
+        android:textColor="#00363a"
+        android:id="@+id/outputText"
+        android:layout_width="140dp"
+        android:layout_height="71dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/button"
+        android:layout_marginTop="78dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="227dp"
+        tools:layout_editor_absoluteY="113dp" />
+
+    <Button
+        android:onClick="Divide"
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:background="#2bbd7e"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:text="/"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignTop="@+id/button4"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="278dp" />
+
+    <Button
+        android:onClick="Subtract"
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:textSize="40sp"
+        android:background="#2bbd7e"
+        android:textColor="#ffffff"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/button5"
+        android:layout_marginRight="82dp"
+        android:text="-"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="278dp" />
+
+    <Button
+        android:onClick="Multiply"
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:background="#2bbd7e"
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/button5"
+        android:layout_marginBottom="80dp"
+        android:text="*"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="395dp" />
+
+    <Button
+        android:onClick="Addition"
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:background="#2bbd7e"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="198dp"
+        android:layout_marginLeft="35dp"
+        android:text="+"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="395dp" />
+
+</RelativeLayout>
